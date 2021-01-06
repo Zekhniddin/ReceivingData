@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		089FD45625A64E640070DC4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089FD45525A64E640070DC4A /* AppDelegate.swift */; };
 		089FD45825A64E640070DC4A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089FD45725A64E640070DC4A /* SceneDelegate.swift */; };
-		089FD45A25A64E640070DC4A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089FD45925A64E640070DC4A /* ContentView.swift */; };
 		089FD45D25A64E640070DC4A /* ReceivingData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 089FD45B25A64E640070DC4A /* ReceivingData.xcdatamodeld */; };
 		089FD45F25A64E680070DC4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 089FD45E25A64E680070DC4A /* Assets.xcassets */; };
 		089FD46225A64E680070DC4A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 089FD46125A64E680070DC4A /* Preview Assets.xcassets */; };
 		089FD46525A64E680070DC4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 089FD46325A64E680070DC4A /* LaunchScreen.storyboard */; };
 		089FD47025A64E680070DC4A /* ReceivingDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089FD46F25A64E680070DC4A /* ReceivingDataTests.swift */; };
 		089FD47B25A64E680070DC4A /* ReceivingDataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089FD47A25A64E680070DC4A /* ReceivingDataUITests.swift */; };
+		089FD48E25A64E990070DC4A /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089FD48D25A64E990070DC4A /* HomeScreen.swift */; };
+		089FD49725A64EF50070DC4A /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089FD49625A64EF50070DC4A /* Protocols.swift */; };
+		089FD49C25A64F0C0070DC4A /* PresentScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089FD49B25A64F0C0070DC4A /* PresentScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,6 @@
 		089FD45225A64E640070DC4A /* ReceivingData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReceivingData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		089FD45525A64E640070DC4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		089FD45725A64E640070DC4A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		089FD45925A64E640070DC4A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		089FD45C25A64E640070DC4A /* ReceivingData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ReceivingData.xcdatamodel; sourceTree = "<group>"; };
 		089FD45E25A64E680070DC4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		089FD46125A64E680070DC4A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -51,6 +52,9 @@
 		089FD47625A64E680070DC4A /* ReceivingDataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReceivingDataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		089FD47A25A64E680070DC4A /* ReceivingDataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceivingDataUITests.swift; sourceTree = "<group>"; };
 		089FD47C25A64E680070DC4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		089FD48D25A64E990070DC4A /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		089FD49625A64EF50070DC4A /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		089FD49B25A64F0C0070DC4A /* PresentScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,13 +105,12 @@
 		089FD45425A64E640070DC4A /* ReceivingData */ = {
 			isa = PBXGroup;
 			children = (
+				089FD49525A64ED80070DC4A /* protocols */,
+				089FD48C25A64E850070DC4A /* screens */,
+				089FD48B25A64E770070DC4A /* apputils */,
 				089FD45525A64E640070DC4A /* AppDelegate.swift */,
 				089FD45725A64E640070DC4A /* SceneDelegate.swift */,
-				089FD45925A64E640070DC4A /* ContentView.swift */,
-				089FD45E25A64E680070DC4A /* Assets.xcassets */,
-				089FD46325A64E680070DC4A /* LaunchScreen.storyboard */,
 				089FD46625A64E680070DC4A /* Info.plist */,
-				089FD45B25A64E640070DC4A /* ReceivingData.xcdatamodeld */,
 				089FD46025A64E680070DC4A /* Preview Content */,
 			);
 			path = ReceivingData;
@@ -137,6 +140,33 @@
 				089FD47C25A64E680070DC4A /* Info.plist */,
 			);
 			path = ReceivingDataUITests;
+			sourceTree = "<group>";
+		};
+		089FD48B25A64E770070DC4A /* apputils */ = {
+			isa = PBXGroup;
+			children = (
+				089FD46325A64E680070DC4A /* LaunchScreen.storyboard */,
+				089FD45B25A64E640070DC4A /* ReceivingData.xcdatamodeld */,
+				089FD45E25A64E680070DC4A /* Assets.xcassets */,
+			);
+			path = apputils;
+			sourceTree = "<group>";
+		};
+		089FD48C25A64E850070DC4A /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				089FD48D25A64E990070DC4A /* HomeScreen.swift */,
+				089FD49B25A64F0C0070DC4A /* PresentScreen.swift */,
+			);
+			path = screens;
+			sourceTree = "<group>";
+		};
+		089FD49525A64ED80070DC4A /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				089FD49625A64EF50070DC4A /* Protocols.swift */,
+			);
+			path = protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,10 +299,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				089FD49725A64EF50070DC4A /* Protocols.swift in Sources */,
 				089FD45D25A64E640070DC4A /* ReceivingData.xcdatamodeld in Sources */,
+				089FD48E25A64E990070DC4A /* HomeScreen.swift in Sources */,
+				089FD49C25A64F0C0070DC4A /* PresentScreen.swift in Sources */,
 				089FD45625A64E640070DC4A /* AppDelegate.swift in Sources */,
 				089FD45825A64E640070DC4A /* SceneDelegate.swift in Sources */,
-				089FD45A25A64E640070DC4A /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
